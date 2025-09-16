@@ -1,11 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My AI490 Site f</title>
-</head> 
+        <title>Sumit Punshi_490</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Aboard | Sumit Punshi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --f1-red: #e10600;
+            --pit-dark: #06070a;
+            --pit-light: #14161d;
+            --tire-grey: #8a8f99;
+            --chalk: #f3f7fa;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: radial-gradient(circle at top, rgba(225, 6, 0, 0.18), transparent 55%), linear-gradient(180deg, #050608 0%, #090b10 45%, #040406 100%);
+            color: var(--chalk);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: -10vh -10vw auto -10vw;
+            height: 130vh;
+            background: url('data:image/svg+xml;base64,CjxzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2aWV3Qm94PScwIDAgMTIwMCA0MDAnPgogIDxyZWN0IHdpZHRoPScxMjAwJyBoZWlnaHQ9JzQwMCcgZmlsbD0nbm9uZScvPgogIDxnIGZpbGw9J3JnYmEoMjU1LDI1NSwyNTUsMC4wOCknIHN0cm9rZT0ncmdiYSgyNTUsMjU1LDI1NSwwLjEyKScgc3Ryb2tlLXdpZHRoPSczJz4KICAgIDxwYXRoIGQ9J00zMCAxNjAgaDkwIGw0MCAtNDAgaDEyMCBsMTggLTE4IGg3MiBsMTggMTggaDEyMCBsNDAgNDAgaDExMCBsMTAgMzAgaC01NjAgeicvPgogICAgPHBhdGggZD0nTTMwIDMyMCBoOTAgbDQwIC00MCBoMTIwIGwxOCAtMTggaDcyIGwxOCAxOCBoMTIwIGw0MCA0MCBoMTEwIGwxMCAzMCBoLTU2MCB6JyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgyOTAsLTQwKScvPgogICAgPHBhdGggZD0nTTMwIDMyMCBoOTAgbDQwIC00MCBoMTIwIGwxOCAtMTggaDcyIGwxOCAxOCBoMTIwIGw0MCA0MCBoMTEwIGwxMCAzMCBoLTU2MCB6JyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSg1ODAsLTgwKScvPgogIDwvZz4KICA8ZyBzdHJva2U9JyNmZmZmZmYnIHN0cm9rZS13aWR0aD0nNicgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJyBmaWxsPSdyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpJz4KICAgIDxwYXRoIGQ9J004MCAyNzAgaDEyMCBsNDAgLTQwIGgyMjAgbDM1IDM1IGwtMzUgMzUgaC0yMjAgbC00MCAtNDAgaC0xMjAgeicvPgogICAgPHBhdGggZD0nTTAgMzUwIGgyMDAgbDY2IC02NiBoMjYwIGw1OCA1OCBsLTU4IDU4IGgtMjYwIGwtNjYgLTY2IEgwIHonIHRyYW5zZm9ybT0ndHJhbnNsYXRlKDM0MCwtNDApJy8+CiAgICA8cGF0aCBkPSdNMCAzNTAgaDIwMCBsNjYgLTY2IGgyNjAgbDU4IDU4IGwtNTggNTggaC0yNjAgbC02NiAtNjYgSDAgeicgdHJhbnNmb3JtPSd0cmFuc2xhdGUoNjgwLC04MCknLz4KICA8L2c+Cjwvc3ZnPgo=') center top / cover no-repeat;
+            opacity: 0.4;
+            pointer-events: none;
+            filter: blur(0.2px);
+        }
+
+        main {
+            position: relative;
+            padding: clamp(3rem, 6vw, 6rem) clamp(1.5rem, 6vw, 7rem) clamp(6rem, 10vw, 10rem);
+            display: flex;
+            flex-direction: column;
+            gap: clamp(3rem, 8vw, 6rem);
+            max-width: 960px;
+            margin: 0 auto;
+            z-index: 1;
+        }
+
+        header.hero {
+            background: rgba(10, 12, 18, 0.88);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65);
+            border-radius: 22px;
+            padding: clamp(2.5rem, 6vw, 4rem) clamp(2rem, 5vw, 4.5rem);
+            display: grid;
+            gap: 1.2rem;
+            text-align: left;
+        }
+
+        .preheader {
+            font-family: 'Titillium Web', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.28em;
+            font-size: 0.9rem;
+            color: var(--tire-grey);
+        }
+
+        h1 {
+            font-family: 'Titillium Web', sans-serif;
+            font-size: clamp(2.8rem, 5.5vw, 4.4rem);
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            margin: 0;
+        }
+
+        .lead {
+            font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+            line-height: 1.7;
+            color: rgba(243, 247, 250, 0.85);
+            margin: 0;
+        }
+
+        .track-divider {
+            width: 120px;
+            height: 6px;
+            background: linear-gradient(90deg, var(--f1-red), rgba(255, 255, 255, 0.45));
+            border-radius: 999px;
+        }
+
+        section.about {
+            background: rgba(9, 11, 16, 0.86);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: clamp(2.4rem, 6vw, 3.8rem) clamp(2rem, 5vw, 3.5rem);
+            box-shadow: 0 18px 42px rgba(0, 0, 0, 0.6);
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        section.about h2 {
+            font-family: 'Titillium Web', sans-serif;
+            font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+        }
+
+        .bio-grid {
+            display: grid;
+            gap: 1rem;
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+
+        .bio-grid strong {
+            font-weight: 600;
+            color: var(--chalk);
+        }
+
+        .speedster {
+            position: fixed;
+            bottom: clamp(3rem, 8vh, 6rem);
+            left: -24rem;
+            width: clamp(16rem, 30vw, 26rem);
+            aspect-ratio: 3 / 1;
+            background: url('data:image/svg+xml;base64,CjxzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2aWV3Qm94PScwIDAgMzYwIDEyMCc+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9J2NhckJvZHknIHgxPScwJScgeTE9JzAlJyB4Mj0nMTAwJScgeTI9JzAlJz4KICAgICAgPHN0b3Agb2Zmc2V0PScwJScgc3RvcC1jb2xvcj0nI2Q5MWUzNicvPgogICAgICA8c3RvcCBvZmZzZXQ9JzY1JScgc3RvcC1jb2xvcj0nI2YwNGI0NCcvPgogICAgICA8c3RvcCBvZmZzZXQ9JzEwMCUnIHN0b3AtY29sb3I9JyNmZjc3NjUnLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSczNjAnIGhlaWdodD0nMTIwJyBmaWxsPSdub25lJy8+CiAgPGc+CiAgICA8cGF0aCBkPSdNMTUgOTIgaDQ4IGwyNCAtMjAgaDE0MiBsMTggLTggaDMwIGw0MCAxOCBoMjggbDEwIDEyIGgtMzUwIHonIGZpbGw9J3VybCgjY2FyQm9keSknIHN0cm9rZT0nI2ZmZmZmZicgc3Ryb2tlLXdpZHRoPSczJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJy8+CiAgICA8cGF0aCBkPSdNMTIwIDcyIGgxMDggbDE2IC0yMCBoLTgwIGwtMjAgMTIgaC0yNCB6JyBmaWxsPScjMTExYTJiJyBzdHJva2U9JyNmZmZmZmYnIHN0cm9rZS13aWR0aD0nMicvPgogICAgPGNpcmNsZSBjeD0nMTAyJyBjeT0nOTInIHI9JzE4JyBmaWxsPScjMGQxMTFiJyBzdHJva2U9JyNmZmZmZmYnIHN0cm9rZS13aWR0aD0nNCcvPgogICAgPGNpcmNsZSBjeD0nMjUyJyBjeT0nOTInIHI9JzE4JyBmaWxsPScjMGQxMTFiJyBzdHJva2U9JyNmZmZmZmYnIHN0cm9rZS13aWR0aD0nNCcvPgogICAgPGNpcmNsZSBjeD0nMTAyJyBjeT0nOTInIHI9JzgnIGZpbGw9JyNjNGNiZDQnLz4KICAgIDxjaXJjbGUgY3g9JzI1MicgY3k9JzkyJyByPSc4JyBmaWxsPScjYzRjYmQ0Jy8+CiAgICA8cGF0aCBkPSdNNTggNzIgbDEyIC0xMCBoMjggbC0yMiAxOCB6JyBmaWxsPScjZmZmZmZmJyBmaWxsLW9wYWNpdHk9JzAuNicvPgogICAgPHBhdGggZD0nTTIxMCA1MCBoMzYgbDI0IDIwIGgtNjAgeicgZmlsbD0nI2ZmZmZmZicgZmlsbC1vcGFjaXR5PScwLjQnLz4KICA8L2c+Cjwvc3ZnPgo=') center / contain no-repeat;
+            pointer-events: none;
+            filter: drop-shadow(0 0 32px rgba(225, 6, 0, 0.55));
+            will-change: transform;
+            z-index: 0;
+            transition: transform 0.12s linear;
+        }
+
+        .scroll-hint {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.24em;
+            color: rgba(243, 247, 250, 0.6);
+        }
+
+        @media (max-width: 640px) {
+            header.hero, section.about {
+                text-align: left;
+            }
+
+            .speedster {
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
 <body>
-    <h1>Hello from my first webpage!</h1>
-    <p><strong>Sumit Punshi</strong></p>
-    <p›This page will later host my coursework.</p></p>
+    <div class="speedster" aria-hidden="true"></div>
+    <main>
+        <header class="hero">
+            <p class="preheader">Welcome Aboard</p>
+            <h1>Sumit Punshi</h1>
+            <div class="track-divider" aria-hidden="true"></div>
+            <p class="lead">This is my personal URL for RESECON490AI with Professor Christian. Strap in for strategy, data, and the rush of innovation.</p>
+            <p class="scroll-hint">Scroll to the paddock</p>
+        </header>
+
+        <section class="about" id="about">
+            <h2>About</h2>
+            <div class="bio-grid">
+                <p><strong>Name:</strong> Sumit Punshi</p>
+                <p><strong>Program:</strong> B.S. Managerial Economics &mdash; Senior</p>
+                <p><strong>Leadership:</strong> Formula One UMass President</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const speedster = document.querySelector('.speedster');
+
+        function updateSpeedster() {
+            if (!speedster) return;
+            const maxTravel = window.innerWidth + speedster.offsetWidth * 1.5;
+            const scrollMax = document.body.scrollHeight - window.innerHeight;
+            const progress = scrollMax > 0 ? window.scrollY / scrollMax : 0;
+            const translateX = progress * maxTravel - speedster.offsetWidth;
+            speedster.style.transform = `translateX(${translateX}px)`;
+        }
+
+        window.addEventListener('scroll', updateSpeedster, { passive: true });
+        window.addEventListener('resize', updateSpeedster);
+        updateSpeedster();
+    </script>
 </body>
 </html>
